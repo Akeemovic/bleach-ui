@@ -1,7 +1,42 @@
+/*
+	GENERAL DEFAULT COLOR VARIABLES
+*/
+$default-color : #0366ee;
+$info-color: #1048cb;
+$success-color: #10cb20;
+$warning-color: rgb(255, 203, 15);
+$danger-color: #e60000;
+
+
+/*
+	BOTTON VARIABLES
+*/
+
 // Default button variables
-$button-background: #0366ee;
+$button-background: $default-color;
 $button-background-hover: darken($button-background, 10%);
 $button-border-radius: 4px;
 $button-text: #fff;
 
+// Button Shape modifier variables
 $round-button-border-radius: 30px;
+
+// Info Button Settings
+$info-button-background: $info-color; 
+$info-button-text: #fff;
+$info-button-background-hover: darken($info-button-background, 10%);
+
+// Success Button Settings
+$success-button-background: $success-color; 
+$success-button-text: #fff;
+$success-button-background-hover: darken($success-button-background, 10%);
+
+// Warning Button Settings
+$warning-button-background: $warning-color; 
+$warning-button-text: #fff;
+$warning-button-background-hover: darken($warning-button-background, 10%);
+
+// Danger Button Settings
+$danger-button-background: $danger-color; 
+$danger-button-text: #fff;
+$danger-button-background-hover: darken($danger-button-background, 10%);
