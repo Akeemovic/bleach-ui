@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "../../src/scss/main.css",
+	"sources": [
+		"../../src/scss/main.scss",
+		"../../src/scss/base/_variables.scss",
+		"../../src/scss/base/_mixins.scss",
+		"../../src/scss/base/_reset.scss",
+		"../../src/scss/components/_forms.scss",
+		"../../src/scss/components/_buttons.scss"
+	],
+	"sourcesContent": [
+		"// Configuration\r\n@import \"base/variables\";\r\n@import \"base/mixins\";\r\n\r\n// Reset\r\n@import \"base/reset\";\r\n\r\n// Components\r\n@import \"components/forms\";\r\n@import \"components/buttons\";\r\n",
+		"// Default button variables\r\n$button-background: #0366ee;\r\n$button-background-hover: darken($button-background, 10%);\r\n$button-border-radius: 4px;\r\n$button-text: #fff;\r\n\r\n$round-button-border-radius: 30px;\r\n",
+		"// Button Mixins\r\n@mixin base_button($btn-bg, $btn-text, $btn-bg-hover){\r\n\tbackground: $btn-bg;\r\n  font-size: 1rem;\r\n  color: $btn-text;\r\n  text-transform: none;\r\n  padding: 12px 20px;\r\n  margin: 0 0 8px;\r\n  vertical-align: middle;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  border: none;\r\n  display: inline-block;\r\n  border-radius: $button-border-radius;\r\n\r\n  &:hover {\r\n  \tbackground: $btn-bg-hover;\r\n  }\r\n}",
+		"html, body, p {\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n\tfont-family: \"DejaVu Sans\";\r\n}",
+		"// input[type=\"text\"].form-field, input[type=\"password\"].form-field {\r\n//   display: block;\r\n//   border: 1px solid #cdcdcd;\r\n//   border-radius: 4px;\r\n//   padding: .75rem;\r\n//   outline: none;\r\n//   vertical-align: middle;\r\n//   background: transparent;\r\n//   margin-bottom: .5rem;\r\n//   font-size: 1rem;\r\n//   width: 100%;\r\n//   max-width: 100%;\r\n//   line-height: 1;\r\n// }\r\n\r\n\r\n// label {\r\n// \tdisplay: block;\r\n// \tfont-weight: bold;\r\n// }",
+		"// Parent / Base\r\nbutton, [type=\"button\"], [type=\"reset\"], [type=\"submit\"], a.button, .btn, .button {\r\n\t@include base_button($button-background, $button-text, $button-background-hover);\r\n}\r\n\r\n// Shape Modifiers\r\n.btn-round, .btn-round, .btn-round {\r\n\tborder-radius: 30px;\r\n}\r\n\r\n.btn-square, .btn-square, .btn-square {\r\n\tborder-radius: 0;\r\n}\r\n\r\n// Color Modifiers\r\n\r\n"
+	],
+	"mappings": ";AGAA,AAAA,IAAI,EAAE,AAAA,IAAI,EAAE,AAAA,CAAC,CAAC;EACb,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;CACV;;;AAED,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAW;EACvB,WAAW,EAAE,aAAc;CAC3B;;;AEPD,AAAA,MAAM,GAAE,AAAA,AAAc,IAAb,CAAK,QAAQ,AAAb,IAAgB,AAAA,AAAa,IAAZ,CAAK,OAAO,AAAZ,IAAe,AAAA,AAAc,IAAb,CAAK,QAAQ,AAAb,GAAgB,AAAC,CAAA,AAAA,OAAO,EAAE,AAAA,IAAI,EAAE,AAAA,OAAO,CAAC;EHCjF,UAAU,EDDS,OAAO;ECEzB,SAAS,EAAE,IAAK;EAChB,KAAK,EDAO,IAAI;ECChB,cAAc,EAAE,IAAK;EACrB,OAAO,EAAE,SAAU;EACnB,MAAM,EAAE,OAAQ;EAChB,cAAc,EAAE,MAAO;EACvB,UAAU,EAAE,MAAO;EACnB,MAAM,EAAE,OAAQ;EAChB,MAAM,EAAE,IAAK;EACb,OAAO,EAAE,YAAa;EACtB,aAAa,EDVQ,GAAG;CIAzB;;;AAFD,AAAA,MAAM,AHcH,MAAM,GGdD,AAAA,AAAc,IAAb,CAAK,QAAQ,AAAb,CHcN,MAAM,GGdgB,AAAA,AAAa,IAAZ,CAAK,OAAO,AAAZ,CHcvB,MAAM,GGdgC,AAAA,AAAc,IAAb,CAAK,QAAQ,AAAb,CHcvC,MAAM,EGdiD,AAAC,CAAA,AAAA,OAAO,AHc/D,MAAM,EGd2D,AAAA,IAAI,AHcrE,MAAM,EGdiE,AAAA,OAAO,AHc9E,MAAM,CAAC;EACP,UAAU,EDda,OAAM;CCe7B;;;AGXH,AAAA,UAAU,EAAE,AAAA,UAAU,EAAE,AAAA,UAAU,CAAC;EAClC,aAAa,EAAE,IAAK;CACpB;;;AAED,AAAA,WAAW,EAAE,AAAA,WAAW,EAAE,AAAA,WAAW,CAAC;EACrC,aAAa,EAAE,CAAE;CACjB",
+	"names": []
+}

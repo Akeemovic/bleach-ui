@@ -1,0 +1,19 @@
+// Button Mixins
+@mixin base_button($btn-bg, $btn-text, $btn-bg-hover){
+	background: $btn-bg;
+  font-size: 1rem;
+  color: $btn-text;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  border-radius: $button-border-radius;
+
+  &:hover {
+  	background: $btn-bg-hover;
+  }
+}

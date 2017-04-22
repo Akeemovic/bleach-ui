@@ -1,0 +1,44 @@
+/* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+html, body, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 6, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+* {
+  box-sizing: border-box;
+  font-family: "DejaVu Sans";
+}
+
+/* line 2, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button {
+  background: #0366ee;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover, a.button:hover, .btn:hover, .button:hover {
+  background: #0250bc;
+}
+
+/* line 7, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-round, .btn-round, .btn-round {
+  border-radius: 30px;
+}
+
+/* line 11, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-square, .btn-square, .btn-square {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=../../dist/css/main.map */

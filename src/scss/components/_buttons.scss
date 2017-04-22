@@ -1,0 +1,16 @@
+// Parent / Base
+button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button {
+	@include base_button($button-background, $button-text, $button-background-hover);
+}
+
+// Shape Modifiers
+.btn-round, .btn-round, .btn-round {
+	border-radius: 30px;
+}
+
+.btn-square, .btn-square, .btn-square {
+	border-radius: 0;
+}
+
+// Color Modifiers
+
