@@ -1,0 +1,9 @@
+// Buttons
+Natural Buttons like => button, [type="button"], [type="reset"], [type="submit"]
+Inherit the default button bu default and the modifier classes can be called directly..
+
+Other elements need the ".button" class or a colour modifier class to be styled as a button... Then, a shape modifier class can follow
+
+// Forms
+
+
