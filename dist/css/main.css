@@ -1,3 +1,9 @@
+/*
+	GENERAL DEFAULT COLOR VARIABLES
+*/
+/*
+	BOTTON VARIABLES
+*/
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 html, body, p {
   padding: 0;
@@ -26,19 +32,105 @@ button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .butto
   border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover, a.button:hover, .btn:hover, .button:hover {
   background: #0250bc;
 }
 
-/* line 7, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+/* line 8, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-round, .btn-round, .btn-round {
   border-radius: 30px;
 }
 
-/* line 11, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+/* line 12, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-square, .btn-square, .btn-square {
   border-radius: 0;
+}
+
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-full {
+  width: 100%;
+  display: block;
+}
+
+/* line 23, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-success {
+  background: #10cb20;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.btn-success:hover {
+  background: #0c9c19;
+}
+
+/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-info {
+  background: #1048cb;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.btn-info:hover {
+  background: #0c379c;
+}
+
+/* line 31, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-warning {
+  background: #ffcb0f;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.btn-warning:hover {
+  background: #dbac00;
+}
+
+/* line 35, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+.btn-danger {
+  background: #e60000;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: none;
+  padding: 12px 20px;
+  margin: 0 0 8px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.btn-danger:hover {
+  background: #b30000;
 }
 
 /*# sourceMappingURL=../../dist/css/main.map */

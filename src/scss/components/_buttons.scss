@@ -1,6 +1,7 @@
 // Parent / Base
 button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button {
-	@include base_button($button-background, $button-text, $button-background-hover);
+	@include base_button;
+	border-radius: $button-border-radius;
 }
 
 // Shape Modifiers
@@ -12,5 +13,25 @@ button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .butto
 	border-radius: 0;
 }
 
-// Color Modifiers
+// Size modifier
+.btn-full {
+	width: 100%;
+	display: block;
+}
 
+// Color Modifiers
+.btn-success {
+	@include base_button($success-button-background, $success-button-text, $success-button-background-hover);
+}
+
+.btn-info {
+	@include base_button($info-button-background, $info-button-text, $info-button-background-hover);
+}
+
+.btn-warning {
+	@include base_button($warning-button-background, $warning-button-text, $warning-button-background-hover);
+}
+
+.btn-danger {
+	@include base_button($danger-button-background, $danger-button-text, $danger-button-background-hover);
+}
