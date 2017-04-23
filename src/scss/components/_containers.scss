@@ -1,0 +1,29 @@
+.container {
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 480px){
+	.container{
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.container{
+		width: 750px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.container{
+		width: 970px;
+	}
+}
+
+// .ctn-md {
+// 	max-width: $medium-container-width;
+// }
+
+// .ctn-sm {
+// 	max-width: $small-container-width;
+// }

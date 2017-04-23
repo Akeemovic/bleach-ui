@@ -4,6 +4,11 @@ Inherit the default button bu default and the modifier classes can be called dir
 
 Other elements need the ".button" class or a colour modifier class to be styled as a button... Then, a shape modifier class can follow
 
-// Forms
+btn-full gives it 100% width and block display
 
+// Containers
+Just containers
+
+
+// Forms
 

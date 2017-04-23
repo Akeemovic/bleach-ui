@@ -2,6 +2,9 @@
 	GENERAL DEFAULT COLOR VARIABLES
 */
 /*
+	CONTAINERS VARIABLES
+*/
+/*
 	BOTTON VARIABLES
 */
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
@@ -14,6 +17,32 @@ html, body, p {
 * {
   box-sizing: border-box;
   font-family: "DejaVu Sans";
+}
+
+/* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 6, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .container {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 12, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 18, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .container {
+    width: 970px;
+  }
 }
 
 /* line 2, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
