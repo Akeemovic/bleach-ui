@@ -1,20 +1,21 @@
-blockquote {
-	padding: 10px;
-	border-left: 4px solid #eee;
+// blockquote {
+// 	padding: 10px;
+// 	border-left: 4px solid #eee;
 
-	p {
-		font-size: 2rem;
-	}
-	cite {
-		font-style: italic;
-		float: left;
-		position: relative;
-		bottom: 0;
+// 	p {
+// 		font-size: 2rem;
+// 	}
+// 	cite {
+// 		font-style: italic;
+// 		float: left;
+// 		position: relative;
+// 		bottom: 0;
 
-		&::after {
-			content: "";
-			float: none;
-			clear: both;
-		}
-	}
-}
+// 		&::after {
+// 			content: "";
+// 			float: none;
+// 			clear: both;
+// 		}
+// 	}
+// }
+

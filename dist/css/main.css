@@ -1,5 +1,10 @@
 /*
 
+	GENERAL DEFAULT FONT VARIABLES
+
+*/
+/*
+
 	GENERAL DEFAULT COLOR VARIABLES
 
 */
@@ -28,6 +33,13 @@ html, body, p {
 * {
   box-sizing: border-box;
   font-family: "DejaVu Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-color: #404040;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
