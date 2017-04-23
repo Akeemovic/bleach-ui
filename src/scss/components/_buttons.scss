@@ -1,5 +1,5 @@
 // Parent / Base
-button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button {
+#{$buttons} {
 	@include base_button;
 	border-radius: $button-border-radius;
 }

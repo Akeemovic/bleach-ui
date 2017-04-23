@@ -1,5 +1,7 @@
 /*
+
 	GENERAL DEFAULT COLOR VARIABLES
+
 */
 $default-color : #0366ee;
 $info-color: #1048cb;
@@ -8,16 +10,28 @@ $warning-color: rgb(255, 203, 15);
 $danger-color: #e60000;
 
 /*
+
 	CONTAINERS VARIABLES
+
 */
 $large-container-width: 1200px;
 $medium-container-width: 1000;
 $small-container-width: 800;
 
 /*
-	BOTTON VARIABLES
-*/
 
+	FORM INPUT VARIABLES
+
+*/
+$forms: ('[type=range], [type=file], [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$textarea-min-height: 150px;
+$form-group-margin: 0 0 20px 0;
+/*
+
+	BOTTON VARIABLES
+
+*/
+$buttons: ('button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button');
 // Default button variables
 $button-background: $default-color;
 $button-background-hover: darken($button-background, 10%);

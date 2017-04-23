@@ -46,25 +46,42 @@
 
 	<div class="container">
 		<form>
-			<label for="name">Name</label>
-			<input class="form-field" type="text" id="name" placeholder="First Name">
-			
-			<label for="choose">Select</label>
-			
-			<select id="choose">
-			<option disabled selected>Please select</option>
-			<option value="option-1">Option 1</option>
-			<option value="option-2">Option 2</option>
-			</select>
-			
-			<label for="comments">Additional Comments</label>
-			<textarea id="comments"></textarea>
-			
-			<label>
-			<input type="checkbox">
-			Remember me
-			</label>
-			<input type="submit" value="Submit">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input class="" type="text" id="name" placeholder="First Name">
+			</div>
+			<input class="form-square" type="number" name="" value="" placeholder="">
+			<input class="form-square" type="search" name="" value="" placeholder="">
+			<input class="form-square" type="datetime" name="" value="" placeholder="">
+			<input class="form-square" type="file" name="" value="" placeholder="">
+			<input class="form-square" type="date" name="" value="" placeholder="">
+			<input class="form-square" type="color" name="" value="" placeholder="">
+			<input type="range" name="" value="" placeholder="">
+			<input type="tel" name="" value="" placeholder="">
+			<input type="url" name="" value="" placeholder="">
+			<input type="time" name="" value="" placeholder="">
+			<input type="week" name="" value="" placeholder="">
+			<input type="datetime-local" name="" value="" placeholder="">
+			<div class="form-group">
+				<label for="choose">Select</label>
+				<select id="choose">
+				<option disabled selected>Please select</option>
+				<option value="option-1">Option 1</option>
+				<option value="option-2">Option 2</option>
+				</select>
+			</div>
+
+			<div class="form-group">	
+				<label for="comments">Additional Comments</label>
+				<textarea id="comments"></textarea>
+			</div>
+			<div class="form-group">	
+				<label>
+				<input type="checkbox">
+				Remember me
+				</label>
+			<div class="form-group">	
+				<input type="submit" value="Submit">
 		</form>
 	</div>
   <script src="js/jquery-3.1.1.js"></script>

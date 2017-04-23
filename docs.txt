@@ -11,4 +11,6 @@ Just containers
 
 
 // Forms
-
+Form input fields are styled automatically
+Class form-group can be used to wrap label and input field - It separate them by adding 20px padding
+Class form-square to turn the form field to a square shape
