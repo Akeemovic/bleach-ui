@@ -9,6 +9,9 @@
 
 */
 /*
+	NAVIGATION VARIABLES
+*/
+/*
 
 	CONTAINERS VARIABLES
 
@@ -231,7 +234,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar {
   min-height: 66px;
-  background: #000;
+  background: darkorchid;
   color: #fff;
 }
 
@@ -273,8 +276,6 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 .navbar .navbar-header button#nav-toggle {
   background: inherit;
   float: right;
-  display: inline-block;
-  display: table;
   vertical-align: middle;
   padding: 7px;
   font-height: .5em;
@@ -283,13 +284,13 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: 1px solid #fff;
 }
 
-/* line 48, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 46, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header button#nav-toggle:after {
   float: none;
   clear: both;
 }
 
-/* line 55, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 53, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body {
   float: none;
   clear: both;
@@ -297,7 +298,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border-top: 1px solid gray;
 }
 
-/* line 59, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 57, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body ul.navbar-menu {
   list-style-type: none;
   padding: 0;
@@ -306,7 +307,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   padding: 5px 0 5px 0;
 }
 
-/* line 66, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 64, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body ul.navbar-menu li {
   padding: 0;
   margin: 0;
@@ -316,7 +317,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   padding: 0 5px 0 5px;
 }
 
-/* line 82, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 72, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body ul.navbar-menu li a {
   color: #fff;
   text-decoration: none;
@@ -325,11 +326,59 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   line-height: 2.5em;
 }
 
-/* line 89, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 79, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body ul.navbar-menu li a:hover {
-  border-radius: 5px;
-  color: #000;
+  border-radius: 0;
+  color: darkorchid;
   background: #fff;
+}
+
+/*
+*
+* TABLET ONLY STYLES
+*
+*/
+/*
+*
+* PC ONLY STYLES
+*
+*/
+@media only screen and (min-width: 1000px) {
+  /* line 110, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-header {
+    float: left;
+  }
+  /* line 112, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-header button#nav-toggle {
+    display: none;
+  }
+  /* line 115, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body {
+    float: none;
+    clear: both;
+    display: inline-block;
+    border-width: 0px;
+  }
+  /* line 120, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+  }
+  /* line 125, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-menu li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    color: #fff;
+    background: inherit;
+    padding: 0px 0px;
+    display: inline-block;
+  }
+  /* line 134, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-menu li a {
+    padding: 4.5px 10px;
+    line-height: 3em;
+  }
 }
 
 /*# sourceMappingURL=../../dist/css/main.map */

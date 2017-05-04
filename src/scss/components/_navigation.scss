@@ -1,13 +1,13 @@
 .navbar {
 	min-height: 66px;
-	background: #000;
-	color: #fff;
+	background: $navbar-bg-color;
+	color: $navbar-text-color;
 
 	// Navigation Header
 	.navbar-header {
 		min-height: 66px;
 		// border-bottom: 1px solid #bbddff;
-		color: #fff;
+		color: $navbar-text-color;
 
 		.navbar-logo {
 			display: inline-block;
@@ -17,13 +17,13 @@
 				padding-left: 5px;
 				font-weight: bold;
 				text-align: center;
-				color: #fff;
+				color: $navbar-text-color;
 				line-height: 2.5em;
 				font-size: 1.7rem;
 			}
 
 			a {
-				color: #fff;
+				color: $navbar-text-color;
 			}
 
 			img {
@@ -35,13 +35,11 @@
 		button#nav-toggle {
 			background: inherit;
 			float: right;
-			display: inline-block;
-			display: table;
 			vertical-align: middle;
 			padding: 7px;
 			font-height: .5em;
 			margin: 13px 10px;
-			color: #fff;
+			color: $navbar-text-color;
 			border: 1px solid #fff;
 
 
@@ -55,7 +53,7 @@
 	.navbar-body {
 		@include clearfix
 		display: none;
-		border-top: 1px solid darken(#fff, 50%);
+		border-top: 1px solid darken($navbar-text-color, 50%);
 		ul.navbar-menu {
 			list-style-type: none;
 			padding: 0;
@@ -67,34 +65,78 @@
 				padding: 0;
 				margin: 0;
 				display: block;
-				color: #fff;
+				color: $navbar-text-color;
 				background: inherit;
 				padding: 0 5px 0 5px;
 				
-				&:first-child {
-					
-				}
-
-				&:last-child {
-					
-				}
-
 				a {
-					color: #fff;
+					color: $navbar-text-color;
 					text-decoration: none;
 					display: block;
 					padding: 5px;
 					line-height: 2.5em;
 
 					&:hover {
-						border-radius: 5px;
-						color: #000;
-						background: #fff;
-					}
-				}
-			}
-		}
-	}
+						border-radius: 0;
+						color: $navbar-bg-color;
+						background: $navbar-text-color;
+					} // a:hover
+				} // a
+			} // li
+		} // ul
+	} // navbar-body
+} // navbar
+
+/*
+*
+* TABLET ONLY STYLES
+*
+*/
+
+@media only screen and (min-width: 740px) {
+	// body { background: red; }
 
 }
 
+/*
+*
+* PC ONLY STYLES
+*
+*/
+
+@media only screen and (min-width: 1000px) {
+	// body { background: green; }
+	.navbar {
+		.navbar-header {
+			float: left;
+			button#nav-toggle { display: none; }
+		}
+
+		.navbar-body {
+			@include clearfix
+			display: inline-block;
+			border-width: 0px;
+			
+			ul.navbar-menu {
+				list-style-type: none;
+				margin: 0;
+				// padding: .9px 0px;
+				
+				li {
+					padding: 0;
+					margin: 0;
+					float: left;
+					color: #fff;
+					background: inherit;
+					padding: 0px 0px;
+					display: inline-block;
+			
+					a {
+						padding: 4.5px 10px;
+						line-height: 3em;
+					} // a
+				} // li
+			} // ul
+		} // navba-body
+	} // navbar
+} // PC ONLY STYLES
