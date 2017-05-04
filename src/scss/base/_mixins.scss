@@ -16,3 +16,12 @@
   	background: $btn-bg-hover;
   }
 }
+
+// Clear Fix
+
+@mixin clearfix {
+  float: none;
+  clear: both;
+}
+
+//

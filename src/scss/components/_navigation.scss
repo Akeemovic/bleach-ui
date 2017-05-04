@@ -1,0 +1,100 @@
+.navbar {
+	min-height: 66px;
+	background: #000;
+	color: #fff;
+
+	// Navigation Header
+	.navbar-header {
+		min-height: 66px;
+		// border-bottom: 1px solid #bbddff;
+		color: #fff;
+
+		.navbar-logo {
+			display: inline-block;
+			float: left;
+			span {
+				font-family: 'Changa One';
+				padding-left: 5px;
+				font-weight: bold;
+				text-align: center;
+				color: #fff;
+				line-height: 2.5em;
+				font-size: 1.7rem;
+			}
+
+			a {
+				color: #fff;
+			}
+
+			img {
+				height: 66px;
+				width: auto;
+			}
+		}
+
+		button#nav-toggle {
+			background: inherit;
+			float: right;
+			display: inline-block;
+			display: table;
+			vertical-align: middle;
+			padding: 7px;
+			font-height: .5em;
+			margin: 13px 10px;
+			color: #fff;
+			border: 1px solid #fff;
+
+
+			&:after {
+				@include clearfix
+			}
+		}
+	}
+	
+	// Navigation Body
+	.navbar-body {
+		@include clearfix
+		display: none;
+		border-top: 1px solid darken(#fff, 50%);
+		ul.navbar-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			padding: 5px 0 5px 0;
+
+			li {
+				padding: 0;
+				margin: 0;
+				display: block;
+				color: #fff;
+				background: inherit;
+				padding: 0 5px 0 5px;
+				
+				&:first-child {
+					
+				}
+
+				&:last-child {
+					
+				}
+
+				a {
+					color: #fff;
+					text-decoration: none;
+					display: block;
+					padding: 5px;
+					line-height: 2.5em;
+
+					&:hover {
+						border-radius: 5px;
+						color: #000;
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+
+}
+

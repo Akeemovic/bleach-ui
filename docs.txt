@@ -14,3 +14,31 @@ Just containers
 Form input fields are styled automatically
 Class form-group can be used to wrap label and input field - It separate them by adding 20px padding
 Class form-square to turn the form field to a square shape
+
+// Navigation 
+<nav class="navbar">
+	<div class="navbar-header">
+		<div class="navbar-logo">
+			<span> TrenchBay </span>
+		</div>
+	</div>
+	<div class="navbar-body">
+		<ul class="navbar-menu">
+			<li>
+				<a href="#"> Home </a>
+			</li>
+			<li>
+				<a href="#"> Chat <b>(9)</b> </a>
+			</li>
+			<li>
+				<a href="#"> Notifications <b>(70)</b> </a>
+			</li>
+			<li>
+				<a href="#"> Profile </a>
+			</li>
+			<li>
+				<a href="#"> Logout </a>
+			</li>
+		</ul>
+	</div>
+</nav>

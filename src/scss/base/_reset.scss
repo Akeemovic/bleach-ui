@@ -1,4 +1,4 @@
-html, body, p {
+html, body, p, div {
 	padding: 0;
 	margin: 0;
 }
@@ -14,10 +14,3 @@ html, body, p {
 	font-family: $font-family;
 	line-height: $line-height;
 }
-
-// h1 { font-size: 600% ;}
-// h2 { font-size: 2.25rem ;}
-// h3 { font-size: 2.25rem ;}
-// h4 { font-size: 2.25rem ;}
-// h5 { font-size: 2.25rem ;}
-// h6 { font-size: 150% ;}

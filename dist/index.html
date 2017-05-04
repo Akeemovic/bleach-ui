@@ -13,77 +13,113 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="ctn-sm"></div>
-		<div class="ctn-md"></div>
-		<div class="ctn-lg"></div>
-		<h1> Heading 1 </h1>
-		<h2> Heading 2 </h2>
-		<h3> Heading 3 </h3>
-		<h4> Heading 4 </h4>
-		<h5> Heading 5 </h5>
-		<h6> Heading 6 </h6>
+	<div class="wrapper">
+		<header>
+			<nav class="navbar">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="navbar-logo">
+	<!-- 						<span> TrenchBay </span>
+	 -->						<img src="./images/logo.png">
+						</div>
+						<button id="nav-toggle">
+							<span> Menu </span>
+						</button>
+					</div>
+					<div class="navbar-body">
+						<ul class="navbar-menu">
+							<li>
+								<a href="#home"> Home </a>
+							</li>
+							<li>
+								<a href="#chat"> Chat <b>(9)</b> </a>
+							</li>
+							<li>
+								<a href="#noify"> Notifications <b>(70)</b> </a>
+							</li>
+							<li>
+								<a href="#prof"> Profile </a>
+							</li>
+							<li>
+								<a href="#log"> Logout </a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</nav>
+		<header>
+		<div class="container">
+			<div class="ctn-sm"></div>
+			<div class="ctn-md"></div>
+			<div class="ctn-lg"></div>
+			<h1> Heading 1 </h1>
+			<h2> Heading 2 </h2>
+			<h3> Heading 3 </h3>
+			<h4> Heading 4 </h4>
+			<h5> Heading 5 </h5>
+			<h6> Heading 6 </h6>
 
-		<blockquote>
-			<p>Keep it secret. Keep it safe.</p>
-			<cite>Gandalf the Gray</cite>
-		</blockquote>
+			<blockquote>
+				<p>Keep it secret. Keep it safe.</p>
+				<cite>Gandalf the Gray</cite>
+			</blockquote>
 
-		<button class="btn" id="btn"> Hello World </button>
+			<button class="btn" id="btn"> Hello World </button>
 
-		<button class="btn-full">Button</button>
-		<input class="btn-success" type="submit" value="Submit">
-		<input class="btn-full btn-danger btn-square btn-full" type="button" value="Input">
-		<input class="btn-square btn-info" type="button" value="Info Square">
-		<input class="btn-round btn-danger" type="button" value="Danger Round">
-		<input class="btn-round" type="button" value="Round">
-		<a class="button btn-square">Link</a>
-		<a class="btn-warning btn-round">Warning Square</a>
-		<a class="btn-warning">Warning</a>
-		<p class="button btn-warning"> How Far </p>
-		<a class="button muted">Link</a>
+			<button class="btn-full">Button</button>
+			<input class="btn-success" type="submit" value="Submit">
+			<input class="btn-full btn-danger btn-square btn-full" type="button" value="Input">
+			<input class="btn-square btn-info" type="button" value="Info Square">
+			<input class="btn-round btn-danger" type="button" value="Danger Round">
+			<input class="btn-round" type="button" value="Round">
+			<a class="button btn-square">Link</a>
+			<a class="btn-warning btn-round">Warning Square</a>
+			<a class="btn-warning">Warning</a>
+			<p class="button btn-warning"> How Far </p>
+			<a class="button muted">Link</a>
+		</div>	
+
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input class="" type="text" id="name" placeholder="First Name">
+				</div>
+				<input class="form-square" type="number" name="" value="" placeholder="">
+				<input class="form-square" type="search" name="" value="" placeholder="">
+				<input class="form-square" type="datetime" name="" value="" placeholder="">
+				<input class="form-square" type="file" name="" value="" placeholder="">
+				<input class="form-square" type="date" name="" value="" placeholder="">
+				<input class="form-square" type="color" name="" value="" placeholder="">
+				<input type="range" name="" value="" placeholder="">
+				<input type="tel" name="" value="" placeholder="">
+				<input type="url" name="" value="" placeholder="">
+				<input type="time" name="" value="" placeholder="">
+				<input type="week" name="" value="" placeholder="">
+				<input type="datetime-local" name="" value="" placeholder="">
+				<div class="form-group">
+					<label for="choose">Select</label>
+					<select id="choose">
+					<option disabled selected>Please select</option>
+					<option value="option-1">Option 1</option>
+					<option value="option-2">Option 2</option>
+					</select>
+				</div>
+
+				<div class="form-group">	
+					<label for="comments">Additional Comments</label>
+					<textarea id="comments"></textarea>
+				</div>
+				<div class="form-group">	
+					<label>
+					<input type="checkbox">
+					Remember me
+					</label>
+				<div class="form-group">	
+					<input type="submit" value="Submit">
+			</form>
+		</div>
 	</div>	
-
-	<div class="container">
-		<form>
-			<div class="form-group">
-				<label for="name">Name</label>
-				<input class="" type="text" id="name" placeholder="First Name">
-			</div>
-			<input class="form-square" type="number" name="" value="" placeholder="">
-			<input class="form-square" type="search" name="" value="" placeholder="">
-			<input class="form-square" type="datetime" name="" value="" placeholder="">
-			<input class="form-square" type="file" name="" value="" placeholder="">
-			<input class="form-square" type="date" name="" value="" placeholder="">
-			<input class="form-square" type="color" name="" value="" placeholder="">
-			<input type="range" name="" value="" placeholder="">
-			<input type="tel" name="" value="" placeholder="">
-			<input type="url" name="" value="" placeholder="">
-			<input type="time" name="" value="" placeholder="">
-			<input type="week" name="" value="" placeholder="">
-			<input type="datetime-local" name="" value="" placeholder="">
-			<div class="form-group">
-				<label for="choose">Select</label>
-				<select id="choose">
-				<option disabled selected>Please select</option>
-				<option value="option-1">Option 1</option>
-				<option value="option-2">Option 2</option>
-				</select>
-			</div>
-
-			<div class="form-group">	
-				<label for="comments">Additional Comments</label>
-				<textarea id="comments"></textarea>
-			</div>
-			<div class="form-group">	
-				<label>
-				<input type="checkbox">
-				Remember me
-				</label>
-			<div class="form-group">	
-				<input type="submit" value="Submit">
-		</form>
-	</div>
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/script.js"></script>
 </body>
