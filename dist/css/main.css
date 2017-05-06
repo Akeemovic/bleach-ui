@@ -48,34 +48,37 @@ html, body, p, div {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Dejavu Sans";
   color: #404040;
-}
-
-/* line 24, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
-h1 {
-  font-size: 34px;
+  line-height: 1.2;
+  margin: 16px 0;
+  font-weight: 500;
 }
 
 /* line 25, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 h2 {
   font-size: 30px;
 }
 
-/* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 h4 {
   font-size: 20px;
 }
 
-/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+/* line 29, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 29, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+/* line 30, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 h6 {
   font-size: 16px;
 }
@@ -445,7 +448,7 @@ h6 {
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -454,7 +457,7 @@ label {
   display: block;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-  padding: 12px;
+  padding: 9px;
   outline: none;
   vertical-align: middle;
   background: transparent;
@@ -467,7 +470,7 @@ label {
 
 /* line 21, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 [type=range]:focus, [type=file]:focus, [type=color]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=url]:focus, [type=week]:focus, [type=time]:focus, select:focus, textarea:focus {
-  border-color: orange;
+  border-color: #0366ee;
 }
 
 /* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
@@ -485,13 +488,43 @@ textarea {
   margin: 0 0 20px 0;
 }
 
+/* line 41, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-error {
+  border-color: #e60000;
+}
+
+/* line 44, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-error:focus {
+  border-color: #e60000;
+}
+
+/* line 48, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-warning {
+  border-color: orange;
+}
+
+/* line 50, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-warning:focus {
+  border-color: orange;
+}
+
+/* line 54, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-success {
+  border-color: #10cb20;
+}
+
+/* line 57, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+.has-success:focus {
+  border-color: #10cb20;
+}
+
 /* line 2, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button {
   background: #0366ee;
   font-size: 1rem;
   color: #fff;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -528,7 +561,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   font-size: 1rem;
   color: #fff;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -548,7 +581,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   font-size: 1rem;
   color: #fff;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -568,7 +601,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   font-size: 1rem;
   color: #fff;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -588,7 +621,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   font-size: 1rem;
   color: #fff;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -661,7 +694,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 }
 
 /* line 49, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-.navbar .navbar-header button#nav-toggle:after {
+.navbar .navbar-header button#nav-toggle::after {
   float: none;
   clear: both;
 }
@@ -850,17 +883,19 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   clear: both;
 }
 
-/* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
-[class^="title-header"] {
-  padding: 5px 0;
-  font-size: 1.4em;
-  margin-bottom: 6px;
+/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.page-header {
+  margin-bottom: 10px;
   background: inherit;
+  border-bottom: 1px solid #cccccc;
+  background: inherit;
+  border: 1px solid red;
 }
 
-/* line 30, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
-.title-header {
-  background: inherit;
+/* line 33, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.page-header span, .page-header p {
+  padding: 5px 0;
+  font-size: 1.4em;
 }
 
 /*# sourceMappingURL=../../dist/css/main.map */

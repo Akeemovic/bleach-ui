@@ -46,7 +46,7 @@
 			border: 1px solid #fff;
 
 
-			&:after {
+			&::after {
 				@include clearfix
 			}
 		}

@@ -23,26 +23,36 @@
 }
 
 // Title Header Helpers
-[class^="title-header"] {
-	@include title_header;
-}
 
-.title-header {
+.page-header {
+	@include page_header;
 	background: inherit;
+	border: 1px solid red;
 }
 
-// .title-header-info {
-// 	background: $info-color;
+// [class^="page-header-"] {
+// 	h1, h2, h3, h4, h5, h6, span, p {
+// 		color: #fff;
+// 	}
 // }
 
-// .title-header-success {
+// .page-header-info {
+// 	@include page_header;
+// 	background: $info-color;
+// 	color: #fff;
+// }
+
+// .page-header-success {
+// 	@include page_header;
 // 	background: $success-color;
 // }
 
-// .title-header-warning {
+// .page-header-warning {
+// 	@include page_header;
 // 	background: $warning-color;
 // }
 
-// .title-header-danger {
+// .page-header-danger {
+// 	@include page_header;
 // 	background: $danger-color;
 // }

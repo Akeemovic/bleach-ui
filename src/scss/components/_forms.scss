@@ -1,6 +1,6 @@
 label {
 	display: block;
-	font-weight: bold;
+	font-weight: 600;
 	margin-bottom: 5px;
 }
 
@@ -8,7 +8,7 @@ label {
   display: block;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-  padding: 12px;
+  padding: 9px;
   outline: none;
   vertical-align: middle;
   background: transparent;
@@ -19,7 +19,7 @@ label {
   line-height: 1;
 
   &:focus {
-  	border-color: $warning-color;
+  	border-color: $default-color;
   }
 }
 
@@ -35,4 +35,26 @@ textarea {
 // Wraps a label and form input field and separates them from the next elements
 .form-group {
 	margin: $form-group-margin;
+}
+
+// Validations 
+.has-error { 
+  border-color: $danger-color;
+
+  &:focus {
+    border-color: $danger-color;    
+  }
+}
+.has-warning { 
+  border-color: $warning-color;
+  &:focus {
+    border-color: $warning-color;    
+  }
+}
+.has-success { 
+  border-color: $success-color;
+
+  &:focus {
+    border-color: $success-color;    
+  }
 }

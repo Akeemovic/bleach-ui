@@ -4,7 +4,7 @@
   font-size: 1rem;
   color: $btn-text;
   text-transform: none;
-  padding: 12px 20px;
+  padding: 9px 15px;
   margin: 0 0 8px;
   vertical-align: middle;
   text-align: center;
@@ -24,12 +24,16 @@
   clear: both;
 }
 
-// Title header
-@mixin title_header {
-  padding: 5px 0;
-  font-size: 1.4em;
-  margin-bottom: 6px;
+// Page header
+@mixin page_header {
+  margin-bottom: 10px;
   background: inherit;
+  border-bottom: 1px solid lighten(#000, 80%);
+
+  span, p {
+    padding: 5px 0;
+    font-size: 1.4em;
+  }
 }
 
 @mixin alertbase($color) {
