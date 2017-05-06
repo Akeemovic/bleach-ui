@@ -375,6 +375,11 @@ h6 {
   margin: 5px 0;
 }
 
+/* line 60, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.alert-info::before {
+  content: url(./images/glyphicons/png/logo222.png);
+}
+
 /* line 88, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
 .alert-danger {
   background: #FFBABA;
@@ -383,6 +388,11 @@ h6 {
   padding: 10px;
   position: relative;
   margin: 5px 0;
+}
+
+/* line 60, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.alert-danger::before {
+  content: url(./images/glyphicons/png/logo222.png);
 }
 
 /* line 91, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
@@ -395,6 +405,11 @@ h6 {
   margin: 5px 0;
 }
 
+/* line 60, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.alert-warning::before {
+  content: url(./images/glyphicons/png/logo222.png);
+}
+
 /* line 94, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
 .alert-success {
   background: #DFF2BF;
@@ -405,18 +420,25 @@ h6 {
   margin: 5px 0;
 }
 
+/* line 60, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+.alert-success::before {
+  content: url(images/glyphicons/png/glyphicons-194-ok-sign.png);
+}
+
 /* line 99, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
 .note-info {
-  background: #FEEFB3;
+  background: #BDE5F8;
   color: #00529B;
+  border-left: 5px solid #00529B;
   padding: 10px;
   margin: 5px 0;
 }
 
 /* line 102, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
 .note-danger {
-  background: #FEEFB3;
+  background: #FFBABA;
   color: #D8000C;
+  border-left: 5px solid #D8000C;
   padding: 10px;
   margin: 5px 0;
 }
@@ -425,6 +447,7 @@ h6 {
 .note-warning {
   background: #FEEFB3;
   color: #9F6000;
+  border-left: 5px solid #9F6000;
   padding: 10px;
   margin: 5px 0;
 }
@@ -433,6 +456,7 @@ h6 {
 .note-success {
   background: #DFF2BF;
   color: #4F8A10;
+  border-left: 5px solid #4F8A10;
   padding: 10px;
   margin: 5px 0;
 }
@@ -635,19 +659,19 @@ button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .butto
   border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover, a.button:hover, .btn:hover, .button:hover {
   background: #0250bc;
 }
 
 /* line 8, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-round, .btn-round, .btn-round {
-  border-radius: 30px;
+  border-radius: 30px !important;
 }
 
 /* line 12, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-square, .btn-square, .btn-square {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 /* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
@@ -670,14 +694,15 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .btn-success:hover {
   background: #355c0b;
 }
 
-/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-info {
   background: #00529B;
   font-size: 1rem;
@@ -691,16 +716,17 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .btn-info:hover {
   background: #003768;
 }
 
-/* line 31, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+/* line 33, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-warning {
-  background: #9F6000;
+  background: #ff9c06;
   font-size: 1rem;
   color: #fff;
   text-transform: none;
@@ -712,14 +738,15 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .btn-warning:hover {
-  background: #6c4100;
+  background: #d27f00;
 }
 
-/* line 35, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
+/* line 38, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-danger {
   background: #D8000C;
   font-size: 1rem;
@@ -733,9 +760,10 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: 4px;
 }
 
-/* line 16, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .btn-danger:hover {
   background: #a50009;
 }
@@ -1008,7 +1036,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   background: inherit;
 }
 
-/* line 44, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 45, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .page-header span, .page-header p {
   padding: 5px 0;
   font-size: 1.4em;

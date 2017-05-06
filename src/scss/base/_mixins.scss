@@ -12,6 +12,7 @@
   border: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: $button-border-radius;
 
   &:hover {
   	background: $btn-bg-hover;
@@ -47,20 +48,25 @@
   }
 }
 
-@mixin alertbase($color, $bg-color) {
+@mixin alertbase($color, $bg-color, $icon) {
   background: $bg-color;
   color: $color;
-  // border: 1px solid darken($color, 15%);
+  // border: 1px solid $color;
   border-radius: 6px;
   padding: 10px;
   position: relative;
   margin: 5px 0;
+
+  &::before {
+    content: $icon;
+    // margin: 0 8px;
+  }
 }
 
 @mixin notebase($color, $bg-color) {
   background: $bg-color;
   color: $color;
-  // border-left: 2px solid darken($color, 15%);
+  border-left: 5px solid $color;
   padding: 10px;
   margin: 5px 0;
 }

@@ -83,7 +83,7 @@ $success-button-text: #fff;
 $success-button-background-hover: darken($success-button-background, 10%);
 
 // Warning Button Settings
-$warning-button-background: $warning-color; 
+$warning-button-background: lighten($warning-color, 20%); 
 $warning-button-text: #fff;
 $warning-button-background-hover: darken($warning-button-background, 10%);
 

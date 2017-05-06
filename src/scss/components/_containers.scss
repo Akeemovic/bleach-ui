@@ -83,24 +83,24 @@
 
 // Alert Containers
 .alert-info { 
-	@include alertbase($info-color, $info-bg-color); 
+	@include alertbase($info-color, $info-bg-color, url(./images/glyphicons/png/logo222.png)); 
 }
 .alert-danger { 
-	@include alertbase($danger-color, $danger-bg-color); 
+	@include alertbase($danger-color, $danger-bg-color, url(./images/glyphicons/png/logo222.png)); 
 }
 .alert-warning { 
-	@include alertbase($warning-color, $warning-bg-color); 
+	@include alertbase($warning-color, $warning-bg-color, url(./images/glyphicons/png/logo222.png)); 
 }
 .alert-success { 
-	@include alertbase($success-color, $success-bg-color); 
+	@include alertbase($success-color, $success-bg-color, url(images/glyphicons/png/glyphicons-194-ok-sign.png)); 
 }
 
 // Note Containers
 .note-info { 
-	@include notebase($info-color, $warning-bg-color); 
+	@include notebase($info-color, $info-bg-color); 
 }
 .note-danger { 
-	@include notebase($danger-color, $warning-bg-color); 
+	@include notebase($danger-color, $danger-bg-color); 
 }
 .note-warning { 
 	@include notebase($warning-color, $warning-bg-color); 

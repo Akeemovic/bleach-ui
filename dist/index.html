@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="images/favicon.png">
 </head>
-
+<style type="text/css" media="screen">
+	.btn::before {
+		content: url(./images/glyphicons/png/glyphicons-194-ok-sign.png);
+		margin: 0 8px;
+	}
+</style>
 <body>
 	<div class="wrapper">
 		<header>
@@ -227,7 +232,7 @@
 				<cite>Gandalf the Gray</cite>
 			</blockquote>
 
-			<button class="btn" id="btn"> Hello World </button>
+			<button class="btn" id="btn"> Hello World <<img src="./images/glyphicons/png/glyphicons-194-ok-sign.png" alt=""></button>
 
 			<button class="btn-full">Button</button>
 			<input class="btn-success" type="submit" value="Submit">
@@ -235,8 +240,8 @@
 			<input class="btn-square btn-info" type="button" value="Info Square">
 			<input class="btn-round btn-danger" type="button" value="Danger Round">
 			<input class="btn-round" type="button" value="Round">
-			<a class="button btn-square">Link</a>
-			<a class="btn-warning btn-round">Warning Square</a>
+			<a class="button btn-square">Link Square</a>
+			<a class="btn-warning btn-round">Warning Round</a>
 			<a class="btn-warning">Warning</a>
 			<p class="button btn-warning"> How Far </p>
 			<a class="button muted">Link</a>

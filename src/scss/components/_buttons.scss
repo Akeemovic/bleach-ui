@@ -1,16 +1,16 @@
 // Parent / Base
 #{$buttons} {
 	@include base_button;
-	border-radius: $button-border-radius;
+	
 }
 
 // Shape Modifiers
 .btn-round, .btn-round, .btn-round {
-	border-radius: 30px;
+	border-radius: 30px !important;
 }
 
 .btn-square, .btn-square, .btn-square {
-	border-radius: 0;
+	border-radius: 0 !important;
 }
 
 // Size modifier
@@ -21,17 +21,21 @@
 
 // Color Modifiers
 .btn-success {
-	@include base_button($success-button-background, $success-button-text, $success-button-background-hover);
+	@include base_button($success-color, $success-button-text, $success-button-background-hover);
+
 }
 
 .btn-info {
-	@include base_button($info-button-background, $info-button-text, $info-button-background-hover);
+	@include base_button($info-color, $info-button-text, $info-button-background-hover);
+
 }
 
 .btn-warning {
-	@include base_button($warning-button-background, $warning-button-text, $warning-button-background-hover);
+	@include base_button(lighten($warning-color, 20%), $warning-button-text, $warning-button-background-hover)
+	;
 }
 
 .btn-danger {
-	@include base_button($danger-button-background, $danger-button-text, $danger-button-background-hover);
+	@include base_button($danger-color, $danger-button-text, $danger-button-background-hover);
+
 }
