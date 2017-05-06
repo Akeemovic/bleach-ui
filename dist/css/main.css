@@ -471,6 +471,7 @@ label {
 /* line 21, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 [type=range]:focus, [type=file]:focus, [type=color]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=url]:focus, [type=week]:focus, [type=time]:focus, select:focus, textarea:focus {
   border-color: #0366ee;
+  box-shadow: 0 0px 10px -2px #0366ee;
 }
 
 /* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
@@ -496,6 +497,7 @@ textarea {
 /* line 44, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 .has-error:focus {
   border-color: #e60000;
+  box-shadow: 0 0px 10px -2px #e60000;
 }
 
 /* line 48, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
@@ -503,19 +505,21 @@ textarea {
   border-color: orange;
 }
 
-/* line 50, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+/* line 51, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 .has-warning:focus {
   border-color: orange;
+  box-shadow: 0 0px 10px -2px orange;
 }
 
-/* line 54, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+/* line 55, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 .has-success {
   border-color: #10cb20;
 }
 
-/* line 57, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
+/* line 58, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 .has-success:focus {
   border-color: #10cb20;
+  box-shadow: 0 0px 10px -2px #10cb20;
 }
 
 /* line 2, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
@@ -903,7 +907,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   background: inherit;
 }
 
-/* line 38, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 43, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .page-header span, .page-header p {
   padding: 5px 0;
   font-size: 1.4em;

@@ -17,6 +17,11 @@
   }
 }
 
+@mixin form_border_shadow($color) {
+  border-color: $color;
+  box-shadow: 0 0px 10px -2px $color;
+}
+
 @mixin navbar_list_base {
   list-style-type: none;
   margin: 0;

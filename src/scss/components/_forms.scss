@@ -19,7 +19,7 @@ label {
   line-height: 1;
 
   &:focus {
-  	border-color: $default-color;
+    @include form_border_shadow($default-color);
   }
 }
 
@@ -42,19 +42,20 @@ textarea {
   border-color: $danger-color;
 
   &:focus {
-    border-color: $danger-color;    
+    @include form_border_shadow($danger-color);
   }
 }
 .has-warning { 
   border-color: $warning-color;
+  
   &:focus {
-    border-color: $warning-color;    
+    @include form_border_shadow($warning-color);   
   }
 }
 .has-success { 
   border-color: $success-color;
 
   &:focus {
-    border-color: $success-color;    
+    @include form_border_shadow($success-color);   
   }
 }
