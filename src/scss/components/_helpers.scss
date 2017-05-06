@@ -1,0 +1,48 @@
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important; 
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+// Title Header Helpers
+[class^="title-header"] {
+	@include title_header;
+}
+
+.title-header {
+	background: inherit;
+}
+
+// .title-header-info {
+// 	background: $info-color;
+// }
+
+// .title-header-success {
+// 	background: $success-color;
+// }
+
+// .title-header-warning {
+// 	background: $warning-color;
+// }
+
+// .title-header-danger {
+// 	background: $danger-color;
+// }

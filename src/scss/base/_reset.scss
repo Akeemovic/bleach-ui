@@ -5,8 +5,7 @@ html, body, p, div {
 
 * {
 	box-sizing: border-box;
-	font-family: "DejaVu Sans";
-	font-size: 1rem;
+	font-family: $font-family;
 	font-style: $font-style;
 	font-variant: $font-variant;
 	font-weight: $font-weight;
@@ -14,3 +13,20 @@ html, body, p, div {
 	font-family: $font-family;
 	line-height: $line-height;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+	color: $font-color;
+	// line-height: 1.2;
+	// margin: 0 0 16px;
+}
+
+h1 { font-size: 34px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+
+

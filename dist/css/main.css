@@ -35,14 +35,49 @@ html, body, p, div {
 /* line 6, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
 * {
   box-sizing: border-box;
-  font-family: "DejaVu Sans";
-  font-size: 1rem;
+  font-family: "Dejavu Sans";
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   font-color: #404040;
   font-family: "Dejavu Sans";
   line-height: 1.6;
+}
+
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dejavu Sans";
+  color: #404040;
+}
+
+/* line 24, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h1 {
+  font-size: 34px;
+}
+
+/* line 25, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h2 {
+  font-size: 30px;
+}
+
+/* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 29, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_reset.scss */
+h6 {
+  font-size: 16px;
 }
 
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
@@ -234,7 +269,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar {
   min-height: 66px;
-  background: darkorchid;
+  background: #000;
   color: #fff;
 }
 
@@ -244,16 +279,15 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   color: #fff;
 }
 
-/* line 12, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 11, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header .navbar-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 14, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header .navbar-logo span {
   font-family: 'Changa One';
-  padding-left: 5px;
   font-weight: bold;
   text-align: center;
   color: #fff;
@@ -261,18 +295,24 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   font-size: 1.7rem;
 }
 
-/* line 25, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 23, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header .navbar-logo a {
   color: #fff;
+  text-decoration: none;
 }
 
-/* line 29, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-header .navbar-logo a:hover {
+  color: #1a1a1a;
+}
+
+/* line 32, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header .navbar-logo img {
   height: 66px;
   width: auto;
 }
 
-/* line 35, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 38, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header button#nav-toggle {
   background: inherit;
   float: right;
@@ -284,22 +324,20 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   border: 1px solid #fff;
 }
 
-/* line 46, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 49, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header button#nav-toggle:after {
   float: none;
   clear: both;
 }
 
-/* line 53, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+/* line 56, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-body {
-  float: none;
-  clear: both;
   display: none;
   border-top: 1px solid gray;
 }
 
-/* line 57, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-.navbar .navbar-body ul.navbar-menu {
+/* line 60, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -307,8 +345,8 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   padding: 5px 0 5px 0;
 }
 
-/* line 64, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-.navbar .navbar-body ul.navbar-menu li {
+/* line 67, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list li {
   padding: 0;
   margin: 0;
   display: block;
@@ -317,8 +355,8 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   padding: 0 5px 0 5px;
 }
 
-/* line 72, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-.navbar .navbar-body ul.navbar-menu li a {
+/* line 75, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list li a {
   color: #fff;
   text-decoration: none;
   display: block;
@@ -326,11 +364,45 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   line-height: 2.5em;
 }
 
-/* line 79, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-.navbar .navbar-body ul.navbar-menu li a:hover {
+/* line 82, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list li a:hover {
   border-radius: 0;
-  color: darkorchid;
+  color: #000;
   background: #fff;
+}
+
+/* line 91, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list-primary {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+/* line 98, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list-primary li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: #fff;
+  background: inherit;
+  padding: 0 5px 0 5px;
+}
+
+/* line 106, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list-primary li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  line-height: 2.5em;
+}
+
+/* line 113, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+.navbar .navbar-body ul.navbar-list-primary li a:hover {
+  border-radius: 0;
+  color: #cccccc;
 }
 
 /*
@@ -344,41 +416,115 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 *
 */
 @media only screen and (min-width: 1000px) {
-  /* line 110, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 142, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-header {
     float: left;
   }
-  /* line 112, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 145, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-header .navbar-logo {
+    margin-right: 10px;
+  }
+  /* line 148, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-header button#nav-toggle {
     display: none;
   }
-  /* line 115, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 151, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body {
-    float: none;
-    clear: both;
-    display: inline-block;
+    float: left;
+    display: block;
     border-width: 0px;
+    width: auto;
   }
-  /* line 120, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-  .navbar .navbar-body ul.navbar-menu {
+  /* line 157, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list {
     list-style-type: none;
     margin: 0;
   }
-  /* line 125, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-  .navbar .navbar-body ul.navbar-menu li {
+  /* line 161, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list li {
     padding: 0;
     margin: 0;
-    float: left;
     color: #fff;
     background: inherit;
     padding: 0px 0px;
     display: inline-block;
   }
-  /* line 134, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
-  .navbar .navbar-body ul.navbar-menu li a {
+  /* line 169, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list li a {
     padding: 4.5px 10px;
     line-height: 3em;
   }
+  /* line 176, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list-primary {
+    list-style-type: none;
+    margin: 0;
+  }
+  /* line 180, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list-primary li {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: inherit;
+    padding: 0px 0px;
+    display: inline-block;
+  }
+  /* line 188, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body ul.navbar-list-primary li a {
+    padding: 4.5px 10px;
+    line-height: 3em;
+  }
+  /* line 199, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .nav-right {
+    float: right !important;
+  }
+  /* line 200, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .nav-left {
+    float: left !important;
+  }
+}
+
+/* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 5, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 9, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 13, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 17, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 21, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+/* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+[class^="title-header"] {
+  padding: 5px 0;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  background: inherit;
+}
+
+/* line 30, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_helpers.scss */
+.title-header {
+  background: inherit;
 }
 
 /*# sourceMappingURL=../../dist/css/main.map */

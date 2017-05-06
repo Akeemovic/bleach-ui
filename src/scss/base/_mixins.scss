@@ -24,4 +24,10 @@
   clear: both;
 }
 
-//
+// Title header
+@mixin title_header {
+  padding: 5px 0;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  background: inherit;
+}

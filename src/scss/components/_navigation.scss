@@ -6,7 +6,6 @@
 	// Navigation Header
 	.navbar-header {
 		min-height: 66px;
-		// border-bottom: 1px solid #bbddff;
 		color: $navbar-text-color;
 
 		.navbar-logo {
@@ -14,7 +13,6 @@
 			float: left;
 			span {
 				font-family: 'Changa One';
-				padding-left: 5px;
 				font-weight: bold;
 				text-align: center;
 				color: $navbar-text-color;
@@ -24,6 +22,11 @@
 
 			a {
 				color: $navbar-text-color;
+				text-decoration: none;
+
+				&:hover {
+					color: darken($navbar-text-color, 90%);
+				}
 			}
 
 			img {
@@ -51,10 +54,10 @@
 	
 	// Navigation Body
 	.navbar-body {
-		@include clearfix
 		display: none;
 		border-top: 1px solid darken($navbar-text-color, 50%);
-		ul.navbar-menu {
+		
+		ul.navbar-list {
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
@@ -84,6 +87,37 @@
 				} // a
 			} // li
 		} // ul
+
+		ul.navbar-list-primary {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			padding: 5px 0 5px 0;
+
+			li {
+				padding: 0;
+				margin: 0;
+				display: block;
+				color: $navbar-text-color;
+				background: inherit;
+				padding: 0 5px 0 5px;
+				
+				a {
+					color: $navbar-text-color;
+					text-decoration: none;
+					display: block;
+					padding: 5px;
+					line-height: 2.5em;
+
+					&:hover {
+						border-radius: 0;
+						color: darken($navbar-text-color, 20%);
+					} // a:hover
+				} // a
+			} // li
+		} // ul
+
 	} // navbar-body
 } // navbar
 
@@ -94,7 +128,6 @@
 */
 
 @media only screen and (min-width: 740px) {
-	// body { background: red; }
 
 }
 
@@ -105,27 +138,29 @@
 */
 
 @media only screen and (min-width: 1000px) {
-	// body { background: green; }
 	.navbar {
 		.navbar-header {
 			float: left;
+
+			.navbar-logo {
+				margin-right: 10px;
+			}
 			button#nav-toggle { display: none; }
 		}
 
 		.navbar-body {
-			@include clearfix
-			display: inline-block;
+			float: left;
+			display: block;
 			border-width: 0px;
+			width: auto;
 			
-			ul.navbar-menu {
+			ul.navbar-list {
 				list-style-type: none;
 				margin: 0;
-				// padding: .9px 0px;
 				
 				li {
 					padding: 0;
 					margin: 0;
-					float: left;
 					color: #fff;
 					background: inherit;
 					padding: 0px 0px;
@@ -137,6 +172,31 @@
 					} // a
 				} // li
 			} // ul
+
+			ul.navbar-list-primary {
+				list-style-type: none;
+				margin: 0;
+				
+				li {
+					padding: 0;
+					margin: 0;
+					color: #fff;
+					background: inherit;
+					padding: 0px 0px;
+					display: inline-block;
+			
+					a {
+						padding: 4.5px 10px;
+						line-height: 3em;
+
+					} // a
+				} // li
+			} // ul
 		} // navba-body
 	} // navbar
+
+	// Navigation pulls
+	.nav-right { float: right !important;}
+	.nav-left { float: left !important;} 
+
 } // PC ONLY STYLES
