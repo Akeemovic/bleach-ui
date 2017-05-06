@@ -83,27 +83,363 @@ h6 {
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
 .container {
   margin: 0 auto;
+  width: 95%;
 }
 
-@media screen and (min-width: 480px) {
-  /* line 6, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
-  .container {
-    width: auto;
+/* line 6, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.no-container {
+  margin: 0 auto;
+  width: 0;
+}
+
+/* line 11, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.row {
+  width: 100%;
+  display: table;
+}
+
+/* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.row::before {
+  content: "";
+  float: none;
+  clear: both;
+}
+
+/* line 20, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.row::after {
+  content: "";
+  float: none;
+  clear: both;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-1 {
+  width: 8.33333%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-2 {
+  width: 16.66667%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-3 {
+  width: 25%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-4 {
+  width: 33.33333%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-5 {
+  width: 41.66667%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-6 {
+  width: 50%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-7 {
+  width: 58.33333%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-8 {
+  width: 66.66667%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-9 {
+  width: 75%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-10 {
+  width: 83.33333%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-11 {
+  width: 91.66667%;
+  float: left;
+}
+
+/* line 28, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-12 {
+  width: 100%;
+  float: left;
+}
+
+/* line 37, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-offset-1 {
+  margin: 0 8.33333%;
+}
+
+/* line 37, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-offset-2 {
+  margin: 0 16.66667%;
+}
+
+/* line 37, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-offset-3 {
+  margin: 0 25%;
+}
+
+/* line 37, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.col-sm-offset-4 {
+  margin: 0 33.33333%;
+}
+
+@media screen and (min-width: 740px) {
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-1 {
+    width: 8.33333%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-2 {
+    width: 16.66667%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-4 {
+    width: 33.33333%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-5 {
+    width: 41.66667%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-7 {
+    width: 58.33333%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-8 {
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-9 {
+    width: 75%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-10 {
+    width: 83.33333%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-11 {
+    width: 91.66667%;
+    float: left;
+  }
+  /* line 47, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+  /* line 56, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-1 {
+    margin: 0 8.33333%;
+  }
+  /* line 56, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-2 {
+    margin: 0 16.66667%;
+  }
+  /* line 56, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-3 {
+    margin: 0 25%;
+  }
+  /* line 56, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-4 {
+    margin: 0 33.33333%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* line 12, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
-  .container {
-    width: 750px;
+@media screen and (min-width: 1000px) {
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-1 {
+    width: 8.33333%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-2 {
+    width: 16.66667%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-3 {
+    width: 25%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-4 {
+    width: 33.33333%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-5 {
+    width: 41.66667%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-7 {
+    width: 58.33333%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-8 {
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-9 {
+    width: 75%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-10 {
+    width: 83.33333%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-11 {
+    width: 91.66667%;
+    float: left;
+  }
+  /* line 68, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-lg-12 {
+    width: 100%;
+    float: left;
+  }
+  /* line 77, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-1 {
+    margin: 0 8.33333%;
+  }
+  /* line 77, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-2 {
+    margin: 0 16.66667%;
+  }
+  /* line 77, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-3 {
+    margin: 0 25%;
+  }
+  /* line 77, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+  .col-md-offset-4 {
+    margin: 0 33.33333%;
   }
 }
 
-@media screen and (min-width: 992px) {
-  /* line 18, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
-  .container {
-    width: 970px;
-  }
+/* line 85, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.alert-info {
+  background: #c6d6fb;
+  color: #0a2f84;
+  border: 1px solid #0a2f84;
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+/* line 88, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.alert-danger {
+  background: #ffcdcd;
+  color: #9a0000;
+  border: 1px solid #9a0000;
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+/* line 91, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.alert-warning {
+  background: #fff6e6;
+  color: #b37400;
+  border: 1px solid #b37400;
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+/* line 94, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.alert-success {
+  background: #c6fbca;
+  color: #0a8415;
+  border: 1px solid #0a8415;
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+/* line 99, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.note-info {
+  background: #c6d6fb;
+  color: #0a2f84;
+  border-left: 2px solid #0a2f84;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* line 102, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.note-danger {
+  background: #ffcdcd;
+  color: #9a0000;
+  border-left: 2px solid #9a0000;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* line 105, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.note-warning {
+  background: #fff6e6;
+  color: #b37400;
+  border-left: 2px solid #b37400;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* line 108, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_containers.scss */
+.note-success {
+  background: #c6fbca;
+  color: #0a8415;
+  border-left: 2px solid #0a8415;
+  padding: 10px;
+  margin: 5px 0;
 }
 
 /* line 1, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
@@ -131,7 +467,7 @@ label {
 
 /* line 21, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
 [type=range]:focus, [type=file]:focus, [type=color]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=url]:focus, [type=week]:focus, [type=time]:focus, select:focus, textarea:focus {
-  border-color: #ffcb0f;
+  border-color: orange;
 }
 
 /* line 26, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_forms.scss */
@@ -228,7 +564,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 
 /* line 31, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */
 .btn-warning {
-  background: #ffcb0f;
+  background: orange;
   font-size: 1rem;
   color: #fff;
   text-transform: none;
@@ -243,7 +579,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 
 /* line 15, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .btn-warning:hover {
-  background: #dbac00;
+  background: #cc8400;
 }
 
 /* line 35, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_buttons.scss */

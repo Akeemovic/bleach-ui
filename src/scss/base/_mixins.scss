@@ -31,3 +31,21 @@
   margin-bottom: 6px;
   background: inherit;
 }
+
+@mixin alertbase($color) {
+  background: lighten($color, 45%);
+  color: darken($color, 15%);
+  border: 1px solid darken($color, 15%);
+  border-radius: 6px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+@mixin notebase($color) {
+  background: lighten($color, 45%);
+  color: darken($color, 15%);
+  border-left: 2px solid darken($color, 15%);
+  padding: 10px;
+  margin: 5px 0;
+}

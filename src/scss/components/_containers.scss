@@ -1,29 +1,110 @@
 .container {
 	margin: 0 auto;
+	width: 95%;
 }
 
-@media screen and (min-width: 480px){
-	.container{
-		width: auto;
+.no-container {
+	margin: 0 auto;
+	width: 0;
+}
+
+.row {
+	width: 100%;
+	display: table;
+
+	&::before {
+		content: "";
+		@include clearfix;
+	}
+
+	&::after {
+		content: "";
+		@include clearfix;
 	}
 }
 
-@media screen and (min-width: 768px){
-	.container{
-		width: 750px;
+// Small Columns
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    width: #{(($i/12) * 100) + "%"};
+    float: left;
+  }
+} // Samll Columns
+
+// Grid Column offsets
+// Adds margin left and right
+@for $i from 1 through 4 {
+	.col-sm-offset-#{$i} {
+    margin: 0 #{(($i/12) * 100) + "%"};
+  }	
+} 
+
+// Medium Columns
+@media screen and (min-width: 740px){
+	
+	// Grid Columns	
+	@for $i from 1 through 12 {
+	  .col-md-#{$i} {
+	    width: #{(($i/12) * 100) + "%"};
+	    float: left;
+	  }
 	}
+
+	// Grid Column offsets
+	// Adds margin left and right
+	@for $i from 1 through 4 {
+		.col-md-offset-#{$i} {
+	    margin: 0 #{(($i/12) * 100) + "%"};
+	  }	
+	} 
+
+} // Medium Columns
+
+// Large Columns
+@media screen and (min-width: 1000px){
+	
+	//Large Columns
+	@for $i from 1 through 12 {
+	  .col-lg-#{$i} {
+	    width: #{(($i/12) * 100) + "%"};
+	    float: left;
+	  }
+	}
+
+	// Grid Column offsets
+	// Adds margin left and right
+	@for $i from 1 through 4 {
+		.col-md-offset-#{$i} {
+	    margin: 0 #{(($i/12) * 100) + "%"};
+	  }	
+	} 
+
+} // Large Columns
+
+// Alert Containers
+.alert-info { 
+	@include alertbase($info-color); 
+}
+.alert-danger { 
+	@include alertbase($danger-color); 
+}
+.alert-warning { 
+	@include alertbase($warning-color); 
+}
+.alert-success { 
+	@include alertbase($success-color); 
 }
 
-@media screen and (min-width: 992px){
-	.container{
-		width: 970px;
-	}
+// Note Containers
+.note-info { 
+	@include notebase($info-color); 
 }
-
-// .ctn-md {
-// 	max-width: $medium-container-width;
-// }
-
-// .ctn-sm {
-// 	max-width: $small-container-width;
-// }
+.note-danger { 
+	@include notebase($danger-color); 
+}
+.note-warning { 
+	@include notebase($warning-color); 
+}
+.note-success { 
+	@include notebase($success-color); 
+}
