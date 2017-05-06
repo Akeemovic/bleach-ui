@@ -25,7 +25,7 @@
 				text-decoration: none;
 
 				&:hover {
-					color: darken($navbar-text-color, 90%);
+					color: darken($navbar-text-color, 95%);
 				}
 			}
 
@@ -47,7 +47,7 @@
 
 
 			&::after {
-				@include clearfix
+				@include clearfix;
 			}
 		}
 	}
@@ -154,9 +154,18 @@
 			border-width: 0px;
 			width: auto;
 			
+			#{$forms} {
+				width: 50px;
+				float: left;
+				display: inline-block !important;
+			}
+
+			#{$buttons} {
+				display: inline-block !important;
+			}
+
 			ul.navbar-list {
-				list-style-type: none;
-				margin: 0;
+				@include navbar_list_base
 				
 				li {
 					padding: 0;
@@ -168,14 +177,13 @@
 			
 					a {
 						padding: 4.5px 10px;
-						line-height: 3em;
+						line-height: 3.5em;
 					} // a
 				} // li
 			} // ul
 
 			ul.navbar-list-primary {
-				list-style-type: none;
-				margin: 0;
+				@include navbar_list_base
 				
 				li {
 					padding: 0;
@@ -187,8 +195,7 @@
 			
 					a {
 						padding: 4.5px 10px;
-						line-height: 3em;
-
+						line-height: 3.5em;
 					} // a
 				} // li
 			} // ul

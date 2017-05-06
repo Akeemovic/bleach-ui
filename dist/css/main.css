@@ -672,7 +672,7 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
 
 /* line 27, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
 .navbar .navbar-header .navbar-logo a:hover {
-  color: #1a1a1a;
+  color: #0d0d0d;
 }
 
 /* line 32, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
@@ -805,11 +805,22 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
     width: auto;
   }
   /* line 157, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body [type=range], .navbar .navbar-body [type=file], .navbar .navbar-body [type=color], .navbar .navbar-body [type=date], .navbar .navbar-body [type=datetime], .navbar .navbar-body [type=datetime-local], .navbar .navbar-body [type=email], .navbar .navbar-body [type=month], .navbar .navbar-body [type=number], .navbar .navbar-body [type=password], .navbar .navbar-body [type=search], .navbar .navbar-body [type=tel], .navbar .navbar-body [type=text], .navbar .navbar-body [type=url], .navbar .navbar-body [type=week], .navbar .navbar-body [type=time], .navbar .navbar-body select, .navbar .navbar-body textarea {
+    width: 50px;
+    float: left;
+    display: inline-block !important;
+  }
+  /* line 163, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  .navbar .navbar-body button, .navbar .navbar-body [type="button"], .navbar .navbar-body [type="reset"], .navbar .navbar-body [type="submit"], .navbar .navbar-body a.button, .navbar .navbar-body .btn, .navbar .navbar-body .button {
+    display: inline-block !important;
+  }
+  /* line 167, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list {
     list-style-type: none;
     margin: 0;
+    padding: 0 0 0 0;
   }
-  /* line 161, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 170, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list li {
     padding: 0;
     margin: 0;
@@ -818,17 +829,18 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
     padding: 0px 0px;
     display: inline-block;
   }
-  /* line 169, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 178, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list li a {
     padding: 4.5px 10px;
-    line-height: 3em;
+    line-height: 3.5em;
   }
-  /* line 176, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 185, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list-primary {
     list-style-type: none;
     margin: 0;
+    padding: 0 0 0 0;
   }
-  /* line 180, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 188, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list-primary li {
     padding: 0;
     margin: 0;
@@ -837,16 +849,16 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
     padding: 0px 0px;
     display: inline-block;
   }
-  /* line 188, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 196, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .navbar .navbar-body ul.navbar-list-primary li a {
     padding: 4.5px 10px;
-    line-height: 3em;
+    line-height: 3.5em;
   }
-  /* line 199, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 206, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .nav-right {
     float: right !important;
   }
-  /* line 200, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
+  /* line 207, C:/Users/Akeemovic/sites/salty_css/src/scss/components/_navigation.scss */
   .nav-left {
     float: left !important;
   }
@@ -889,10 +901,9 @@ button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover
   background: inherit;
   border-bottom: 1px solid #cccccc;
   background: inherit;
-  border: 1px solid red;
 }
 
-/* line 33, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
+/* line 38, C:/Users/Akeemovic/sites/salty_css/src/scss/base/_mixins.scss */
 .page-header span, .page-header p {
   padding: 5px 0;
   font-size: 1.4em;
