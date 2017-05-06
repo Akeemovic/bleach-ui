@@ -11,6 +11,7 @@
   cursor: pointer;
   border: none;
   display: inline-block;
+  text-decoration: none;
 
   &:hover {
   	background: $btn-bg-hover;
@@ -46,20 +47,21 @@
   }
 }
 
-@mixin alertbase($color) {
-  background: lighten($color, 45%);
-  color: darken($color, 15%);
-  border: 1px solid darken($color, 15%);
+@mixin alertbase($color, $bg-color) {
+  background: $bg-color;
+  color: $color;
+  // border: 1px solid darken($color, 15%);
   border-radius: 6px;
   padding: 10px;
   position: relative;
   margin: 5px 0;
 }
 
-@mixin notebase($color) {
-  background: lighten($color, 45%);
-  color: darken($color, 15%);
-  border-left: 2px solid darken($color, 15%);
+@mixin notebase($color, $bg-color) {
+  background: $bg-color;
+  color: $color;
+  // border-left: 2px solid darken($color, 15%);
   padding: 10px;
   margin: 5px 0;
 }
+

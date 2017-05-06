@@ -83,28 +83,122 @@
 
 // Alert Containers
 .alert-info { 
-	@include alertbase($info-color); 
+	@include alertbase($info-color, $info-bg-color); 
 }
 .alert-danger { 
-	@include alertbase($danger-color); 
+	@include alertbase($danger-color, $danger-bg-color); 
 }
 .alert-warning { 
-	@include alertbase($warning-color); 
+	@include alertbase($warning-color, $warning-bg-color); 
 }
 .alert-success { 
-	@include alertbase($success-color); 
+	@include alertbase($success-color, $success-bg-color); 
 }
 
 // Note Containers
 .note-info { 
-	@include notebase($info-color); 
+	@include notebase($info-color, $warning-bg-color); 
 }
 .note-danger { 
-	@include notebase($danger-color); 
+	@include notebase($danger-color, $warning-bg-color); 
 }
 .note-warning { 
-	@include notebase($warning-color); 
+	@include notebase($warning-color, $warning-bg-color); 
 }
 .note-success { 
-	@include notebase($success-color); 
+	@include notebase($success-color, $success-bg-color); 
+}
+
+.jumbotron {
+	background: #f5f5f5;;
+	padding: 30px;
+	width: 100%;
+	margin-bottom: 15px;
+	border: 1px solid darken(#f5f5f5, 10%);
+}
+
+.well {
+	background: #f5f5f5;;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid darken(#f5f5f5, 10%);
+}
+
+.panel {
+	background: #f5f5f5;
+	margin-bottom: 15px;	
+	border: 1px solid darken(#f5f5f5, 10%);
+
+	.panel-header { 
+		background: darken(#f5f5f5, 10%);
+		border-bottom: inherit;
+		padding: 10px 15px;
+	}
+
+	.panel-body { 
+		background: inherit;
+		padding: 15px;
+	}
+
+	.panel-footer {
+		border-top: inherit; 
+		background: darken(#f5f5f5, 10%);
+		padding: 10px 15px;
+	}
+}
+
+
+.panel-primary {
+	border-color: darken($default-color, 10%);
+	background: #fff;
+
+	.panel-header { 
+		background: $default-color;
+		color: #fff; 
+	}
+	
+}
+
+.panel-info {
+	border-color: $info-bg-color;
+	background: #fff;
+
+	.panel-header { 
+		background: $info-bg-color;
+		color: $info-color;
+	}
+}
+
+.panel-warning {
+	border-color: $warning-bg-color;
+	background: #fff;
+
+	.panel-header { 
+		background: $warning-bg-color;
+		color: $warning-color; 
+	}
+	
+}
+
+.panel-danger {
+	border-color: $danger-bg-color;
+	background: #fff;
+
+	.panel-header { 
+		background: $danger-bg-color;
+		color: $danger-color; 
+	}
+	
+}
+
+.panel-success {
+	border: 1px solid $success-bg-color;
+	background: #fff;
+
+	
+	.panel-header { 
+		background: $success-bg-color;
+		color: $success-color; 
+	}
+	
 }
