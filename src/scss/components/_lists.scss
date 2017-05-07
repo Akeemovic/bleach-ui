@@ -1,0 +1,98 @@
+ul {
+	li { }
+}
+
+ol {
+	li { }
+} 
+
+// Unstyled lists
+ol.list-unstyled, ul.list-unstyled {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Inline lists
+ol.list-inline, ul.list-inline {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+
+// Inline lists with separator "|"
+ol.list-inline-apart, ul.list-inline-apart {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+
+		&::after {
+			content: "#{$list-inline-apart-separator}";
+			margin-left: 15px;
+		}
+
+		&:last-of-type::after {
+			content: "";
+		}
+	}
+}
+
+// List Menu
+ol.list-menu, ul.list-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	
+	// styling p, a tags inside list heading and list body 
+	li.list-menu-heading, li {
+		p {
+			font-weight: inherit;
+			padding: 8px 10px;
+			color: #24292e;
+		}
+		
+		a {
+			width: 100%;
+			padding: 8px 10px;
+			display: block;
+			
+			&:hover {
+				background: #f3f5f8;;
+			}
+		}
+	}
+
+	// list-menu-heading specific styles
+	li.list-menu-heading {
+		background: #f3f5f8;
+		border-bottom: 1px solid #eee;
+		font-weight: 550;
+		font-size: 17px;
+		color: #586069;
+	}
+	
+	// Border bottom
+	li {
+		border-bottom: 1px solid #eee;
+	}
+	li:last-of-type {
+		border-width: 0;
+	}
+}
+
+// Definition List STyles
+dl {
+	margin-bottom: 15px;
+	dt { 
+		font-weight: bold;
+	}
+
+	dd {
+		margin-bottom: 15px;
+	}
+}

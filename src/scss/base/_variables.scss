@@ -8,7 +8,7 @@ $font-size: 1rem;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #404040;
+$font-color: #000;
 //$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 $line-height: 1.6;
 $font-family: "Dejavu Sans";
@@ -91,3 +91,8 @@ $warning-button-background-hover: darken($warning-button-background, 10%);
 $danger-button-background: $danger-color; 
 $danger-button-text: #fff;
 $danger-button-background-hover: darken($danger-button-background, 10%);
+
+
+//Lists
+$list-inline-apart-separator: ("/");
+
