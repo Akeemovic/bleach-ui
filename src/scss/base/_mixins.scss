@@ -1,3 +1,11 @@
+/***
+
+===========
+  Mixins 
+===========
+
+***/
+
 // Button Mixins
 @mixin base_button($btn-bg: $button-background, $btn-text: $button-text, $btn-bg-hover: $button-background-hover){
 	background: $btn-bg;
@@ -71,3 +79,8 @@
   margin: 5px 0;
 }
 
+// Responsive Images 
+@mixin responsive-image {
+  width: 100%;
+  height: auto;
+}

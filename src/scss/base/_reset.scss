@@ -1,4 +1,19 @@
-html, body, p, div {
+/***
+
+===========
+	Reset	
+===========
+
+***/
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-size: $font-size;
+}
+
+p, div {
 	padding: 0;
 	margin: 0;
 	color: $font-color;
@@ -8,7 +23,6 @@ html, body, p, div {
 	font-weight: $font-weight;
 	font-family: $font-family;
 	line-height: $line-height;
-	font-size: $font-size;
 }
 
 * {

@@ -1,3 +1,11 @@
+/***
+
+==============
+	Containers	
+==============
+
+***/
+
 .container {
 	margin: 0 auto;
 	width: 95%;
@@ -40,7 +48,7 @@
 } 
 
 // Medium Columns
-@media screen and (min-width: 740px){
+@media screen and (min-width: $screen-md-width){
 	
 	// Grid Columns	
 	@for $i from 1 through 12 {
@@ -61,7 +69,7 @@
 } // Medium Columns
 
 // Large Columns
-@media screen and (min-width: 1000px){
+@media screen and (min-width: $screen-lg-width){
 	
 	//Large Columns
 	@for $i from 1 through 12 {
@@ -83,13 +91,13 @@
 
 // Alert Containers
 .alert-info { 
-	@include alertbase($info-color, $info-bg-color, url(./images/glyphicons/png/logo222.png)); 
+	@include alertbase($info-color, $info-bg-color, url(images/glyphicons/png/glyphicons-194-ok-sign.png)); 
 }
 .alert-danger { 
-	@include alertbase($danger-color, $danger-bg-color, url(./images/glyphicons/png/logo222.png)); 
+	@include alertbase($danger-color, $danger-bg-color, url(images/glyphicons/png/glyphicons-194-ok-sign.png)); 
 }
 .alert-warning { 
-	@include alertbase($warning-color, $warning-bg-color, url(./images/glyphicons/png/logo222.png)); 
+	@include alertbase($warning-color, $warning-bg-color, url(images/glyphicons/png/glyphicons-194-ok-sign.png)); 
 }
 .alert-success { 
 	@include alertbase($success-color, $success-bg-color, url(images/glyphicons/png/glyphicons-194-ok-sign.png)); 

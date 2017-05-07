@@ -1,9 +1,17 @@
-/*
+/***
 
-	GENERAL DEFAULT FONT VARIABLES
+=============
+	Variables	
+=============
 
-*/
+***/
 
+//GENERAL VARIABLES
+$screen-sm-width: 480px;
+$screen-md-width: 740px;
+$screen-lg-width: 1000px;
+
+// GENERAL DEFAULT FONT VARIABLES
 $font-size: 1rem;
 $font-style: normal;
 $font-variant: normal;
@@ -14,11 +22,8 @@ $line-height: 1.6;
 $font-family: "Dejavu Sans";
 
 
-/*
 
-	GENERAL DEFAULT COLOR VARIABLES
-
-*/
+// GENERAL DEFAULT COLOR VARIABLES
 $default-color : #0366ee;
 $info-color: #00529B;
 $success-color: #4F8A10;
@@ -32,36 +37,25 @@ $warning-bg-color: #FEEFB3;
 $danger-bg-color: #FFBABA;
 
 
-/*
-	NAVIGATION VARIABLES
-*/
-
+// NAVIGATION VARIABLES
 $navbar-bg-color: #000;
 $navbar-text-color: #fff;
 
 
-/*
-
-	CONTAINERS VARIABLES
-
-*/
+// CONTAINERS VARIABLES
 $large-container-width: 1200px;
 $medium-container-width: 1000;
 $small-container-width: 800;
 
-/*
 
-	FORM INPUT VARIABLES
-
-*/
+// FORM INPUT VARIABLES
 $forms: ('[type=range], [type=file], [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 $textarea-min-height: 150px;
 $form-group-margin: 0 0 20px 0;
-/*
 
-	BOTTON VARIABLES
 
-*/
+// BOTTON VARIABLES
+
 $buttons: ('button, [type="button"], [type="reset"], [type="submit"], a.button, .btn, .button');
 // Default button variables
 $button-background: $default-color;
@@ -93,6 +87,7 @@ $danger-button-text: #fff;
 $danger-button-background-hover: darken($danger-button-background, 10%);
 
 
-//Lists
+// LISTS
 $list-inline-apart-separator: ("/");
 
+//
