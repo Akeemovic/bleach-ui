@@ -1,0 +1,47 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-width: 1px;
+	
+	th, td {
+		border-style: solid;
+		border-color: #eee;
+	}
+
+	thead {
+		tr {
+			th {
+				border-width: 2.5px;
+				text-align: left;
+				font-weight: 600;
+				padding: 7px;
+			}
+		}
+	}
+
+	tfoot {
+		tr {
+			th {
+				border-width: .8px;
+				text-align: left;
+				font-style: italic;
+				padding: 7px;
+				font-size: .9rem;			
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				border-width: .8px;
+				text-align: left;
+				padding: 7px;
+			}
+		}
+	}
+}
+
+.responsive-table {
+	overflow-x: auto;
+} 
