@@ -124,7 +124,6 @@ img.img-circle {
 
 img.img-rounded {
 	@include responsive-image;
-	border: 1px solid red;
 	border-radius: 15px;
 }
 
@@ -170,5 +169,4 @@ img.thumbnail {
 	bottom: 0;
 	padding: 20px 0;
 	margin-top: 15px;
-	background: red;
 }
