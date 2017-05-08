@@ -10,6 +10,9 @@
 	min-height: 66px;
 	background: $navbar-bg-color;
 	color: $navbar-text-color;
+	border-bottom: 1px solid #eee;
+	#{$forms} { background: #fff;}
+	p, span { color: $navbar-text-color;}
 
 	// Navigation Header
 	.navbar-header {
@@ -33,7 +36,7 @@
 				text-decoration: none;
 
 				&:hover {
-					color: darken($navbar-text-color, 95%);
+					color: $navbar-link-hover-color;
 				}
 			}
 
@@ -55,7 +58,7 @@
 
 
 			&::after {
-				@include clearfix;
+				// @include clearfix;
 			}
 		}
 	}
@@ -89,43 +92,12 @@
 
 					&:hover {
 						border-radius: 0;
-						color: $navbar-bg-color;
-						background: $navbar-text-color;
+						color: $navbar-link-hover-color;
+						background: $navbar-bg-color;
 					} // a:hover
 				} // a
 			} // li
 		} // ul
-
-		ul.navbar-list-primary {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			padding: 5px 0 5px 0;
-
-			li {
-				padding: 0;
-				margin: 0;
-				display: block;
-				color: $navbar-text-color;
-				background: inherit;
-				padding: 0 5px 0 5px;
-				
-				a {
-					color: $navbar-text-color;
-					text-decoration: none;
-					display: block;
-					padding: 5px;
-					line-height: 2.5em;
-
-					&:hover {
-						border-radius: 0;
-						color: darken($navbar-text-color, 20%);
-					} // a:hover
-				} // a
-			} // li
-		} // ul
-
 	} // navbar-body
 } // navbar
 
@@ -147,50 +119,42 @@
 
 @media only screen and (min-width: 1000px) {
 	.navbar {
+		display: table;
+		width: 100%;
+
+		#{$forms} {
+			max-width: 150px;
+			max-height: 100%;
+			display: inline-block;
+			background: #fff;
+			font-size: 15px;
+			padding: 7px;
+			margin: 18px 5px 18px 0px;
+		}
+
+		#{$buttons} {
+			vertical-align: middle;
+			font-size: 15px;
+			padding: 7px;
+			margin: 17px 5px 17px 0px;
+		}
 		.navbar-header {
 			float: left;
 
 			.navbar-logo {
 				margin-right: 10px;
 			}
+
 			button#nav-toggle { display: none; }
-		}
+		} // Nav Header 
 
 		.navbar-body {
 			float: left;
-			display: block;
+			display: inline-block;
 			border-width: 0px;
 			width: auto;
-			
-			#{$forms} {
-				width: 50px;
-				float: left;
-				display: inline-block !important;
-			}
-
-			#{$buttons} {
-				display: inline-block !important;
-			}
 
 			ul.navbar-list {
-				@include navbar_list_base
-				
-				li {
-					padding: 0;
-					margin: 0;
-					color: #fff;
-					background: inherit;
-					padding: 0px 0px;
-					display: inline-block;
-			
-					a {
-						padding: 4.5px 10px;
-						line-height: 3.5em;
-					} // a
-				} // li
-			} // ul
-
-			ul.navbar-list-primary {
 				@include navbar_list_base
 				
 				li {
